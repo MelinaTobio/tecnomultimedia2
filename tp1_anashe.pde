@@ -20,6 +20,7 @@ void draw() {
     String nombre = "Trazo" + nf(i, 2) + ".png";
     trazos[i] = loadImage(nombre);
   }
+  //--------TRAZOS AZUL OSCURO
   if (Capa1 < 30) {
     int cual = int(random(cantidad));
     float x = random(width - 150);
@@ -28,6 +29,7 @@ void draw() {
     image(trazos[cual], x, y, 80, 200);
     Capa1++;
   } 
+  //-----------TRAZOS AZUL MAS CLARO
    else if (Capa2 < 25) {
     int cual = int(random(cantidad));
     float x = random(width - 150);
@@ -36,32 +38,31 @@ void draw() {
     image(trazos[cual], x, y, 80, 200);
     Capa2++;
   } 
+  //--------TRAZOS ROSAS
   else if (Capa3 < 18) {
     int cual = int(random(cantidad));
     float x = random(width - 150);
     float y = random(height - 40);
-    //if (random(100) < 50) {
       tint(196, 79, 140);
-   // } else {
-     // tint(255,random(100, 120), 0);
-    //}
     image(trazos[cual], x, y, 80, 150);
     Capa3++;
   }
-  else if (Capa4 < 12){
+  //-----------TRAZOS AMARILLOS
+  else if (Capa4 < 8){
      int cual = int(random(cantidad));
      float x = random(width - 150);
     float y = random(height - 70);
-     tint(255,random(100, 120), 0);
+     tint(223,168,46);
     image(trazos[cual], x, y, 80, 150);
     Capa4++;
   }
+  //---------LINEAS DE COLOR
    else if (Capa5 < 18) {
     int cual = int(random(cantidad));
     float x = random(width - 150);
     float y = random(height - 70);
     if(random(100) < 50){
-       tint(160, 90, 40);
+       tint(223,168,46);
     }else {
       tint(#FF9BD0);
    }
