@@ -22,16 +22,16 @@ void draw() {
   }
   if (Capa1 < 30) {
     int cual = int(random(cantidad));
-    float x = random(width - 200);
-    float y = random(height - 250);
+    float x = random(width - 150);
+    float y = random(height - 150);
     tint(0, 10, random(50, 150));
     image(trazos[cual], x, y, 80, 200);
     Capa1++;
   } 
    else if (Capa2 < 25) {
     int cual = int(random(cantidad));
-    float x = random(width - 200);
-    float y = random(height - 250);
+    float x = random(width - 150);
+    float y = random(height - 150);
     tint(0, 10, random(150, 200));
     image(trazos[cual], x, y, 80, 200);
     Capa2++;
